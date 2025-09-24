@@ -67,6 +67,28 @@ Consumption
 ML notebook shows how models can access features from Feast for training.
 
 5. How to Run
+# 🚀 ML Data Pipeline Capstone
+
+An end-to-end **data engineering project** demonstrating:
+- Batch ingestion (MinIO/S3)
+- Streaming ingestion (Kafka)
+- Transformations (Spark)
+- Feature Store (Feast)
+- Data Quality (Great Expectations)
+- Orchestration (Airflow)
+- Testing (Pytest + GitHub Actions)
+
+## Run in GitHub Codespaces
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/YOURUSERNAME/ml-data-pipeline-capstone)
+
+## Quickstart
+```bash
+docker-compose up -d
+python data/synthetic_data_generator.py
+python ingestion/batch_ingest.py
+python transformations/feature_engineering.py
+python quality_checks/validate.py
+
 # Clone repo
 git clone https://github.com/yourusername/ml-data-pipeline-capstone.git
 cd ml-data-pipeline-capstone
