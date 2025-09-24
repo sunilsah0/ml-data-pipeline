@@ -1,8 +1,13 @@
 {
-  "name": "ML Data Pipeline Capstone",
-  "image": "mcr.microsoft.com/devcontainers/python:3.10",
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  "name": "Python 3",
+  "build": {
+    "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "pip install -r requirements.txt"
+  "settings": {
+    "python.pythonPath": "/workspace/.venv/bin/python"
+  },
+  "extensions": [
+    "ms-python.python"
+  ],
+  "postCreateCommand": "python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install -r requirements.txt"
 }
