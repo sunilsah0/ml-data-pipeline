@@ -1,0 +1,8 @@
+kafka-python
+boto3
+pyspark
+feast
+great-expectations
+apache-airflow
+pytest
+pandas
